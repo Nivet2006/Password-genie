@@ -1,2 +1,2 @@
 # Password-generator
-Created with CodeSandbox
+ A password generator, which is made using javascript, css and html

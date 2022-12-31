@@ -1,0 +1,152 @@
+body {
+  min-height: 100vh;
+  padding-top: 100px;
+  background: #e8eaed;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+}
+
+.info {
+  font-size: 0.9rem;
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 0;
+}
+.title-section {
+  background: #fd9d08;
+  padding: 2px 10px;
+  color: whitesmoke;
+}
+h1 {
+  font-size: 1.1rem;
+}
+.inner-section {
+  padding: 20px;
+}
+.wrapper {
+  overflow: hidden;
+  margin: auto;
+  width: 90%;
+  max-width: 380px;
+  background: white;
+  border-radius: 9px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-flow: column wrap;
+}
+.wrapper .password-section {
+  position: relative;
+  border: 2px solid lightgray;
+  color: gray;
+  margin-top: 20px;
+  padding: 2px 2px 2px 8px;
+  border-radius: 5px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .password-section .alert {
+  position: absolute;
+  padding: 0 5px;
+  border-radius: 2px;
+  width: 21ch;
+  height: 89%;
+  left: 2px;
+  top: -100%;
+  width: 96%;
+  text-align: center;
+  color: #333;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.wrapper .password-section .alert.success {
+  background: rgb(29, 161, 242, 0.9);
+  opacity: 1;
+}
+.wrapper .password-section .alert.fail {
+  background: rgb(230, 0, 35, 0.9);
+  color: white;
+  opacity: 1;
+}
+.wrapper .password-section .copy {
+  height: 100%;
+  width: 50px;
+  background: #e60023;
+  border: 0;
+  color: white;
+  border-radius: 2px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.wrapper .password-section .copy:hover {
+  background: #ff7a00;
+}
+.wrapper .controls {
+  text-align: left;
+  display: flex;
+  flex-flow: column wrap;
+}
+.wrapper .controls .control {
+  padding: 3px;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  margin: 2px;
+}
+.wrapper .controls .generate {
+  width: 100%;
+  border: 0;
+  color: white;
+  background: #fd9d08;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+.wrapper .controls .generate:hover {
+  background: #ff7a00;
+}
+#length-box {
+  width: 100%;
+}
+#length-box input {
+  width: 100%;
+}
+input[type="checkbox"] {
+  visibility: hidden;
+}
+label.check-label {
+  position: relative;
+}
+label.check-label:before {
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  left: -24px;
+  top: 0;
+  border: 0.5px solid lightgray;
+  position: absolute;
+  background: transparent;
+  transition: all 0.3s cubic-bezier(0, 0.82, 1, 1.81);
+}
+input[type="checkbox"]:checked + label.check-label:before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 0.8rem;
+  color: #212121;
+  text-align: center;
+  background: #00e676;
+  transition: all 0.3s cubic-bezier(0, 0.82, 1, 1.81);
+}
+
+.plink {
+  text-decoration: none;
+  color: #000000;
+}

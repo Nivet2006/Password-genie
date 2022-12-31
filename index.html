@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <title>Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="https://fonts.googleapis.com/css?family=Kanit:300,500,700" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/b704b7e4ad.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title-section">
+        <h1 align="center" class="title">Password Generator</h1>
+      </div>
+
+      <div class="inner-section">
+        <div class="password-section">
+          <div class="pass-field" id="pass-field">
+            ................
+          </div>
+        </div>
+        <button id="copy" class="copy">Copy password</button>
+        <div class="alert" id="alert">
+          <span class="message" id="message"></span>
+        </div>
+        <p class="info">
+          NOTE: Select the options needed and then, click the "Generate" button to get
+          your generated password above. If your satisfied with the password
+          provided then click on copy.
+        </p>
+        <div class="controls">
+          <div class="control length" id="length-box">
+            <label for="length">Password Length:</label>
+            <input type="range" id="length" min="4" max="20" list="ranges" />
+            <datalist id="ranges">
+              <option value="4" label="4"> </option>
+              <option value="5"> </option>
+              <option value="6"> </option>
+              <option value="7"> </option>
+              <option value="8"> </option>
+              <option value="9"> </option>
+              <option value="10"> </option>
+              <option value="11"> </option>
+              <option value="12" label="12"> </option>
+              <option value="13"> </option>
+              <option value="14"> </option>
+              <option value="15"> </option>
+              <option value="16"> </option>
+              <option value="17"> </option>
+              <option value="18"> </option>
+              <option value="19"> </option>
+              <option value="20"> </option>
+            </datalist>
+          </div>
+          <div class="control">
+            <input type="checkbox" id="lowercase" />
+            <label class="check-label" for="lowercase"
+              ><span class="checkbox"
+                >Use Lowercase Characters(a-z)</span
+              ></label
+            >
+          </div>
+          <div class="control">
+            <input type="checkbox" id="uppercase" />
+            <label class="check-label" for="uppercase"
+              ><span class="checkbox"
+                >Use Uppercase Characters(A-Z)</span
+              ></label
+            >
+          </div>
+          <div class="control">
+            <input type="checkbox" id="numbers" />
+            <label class="check-label" for="numbers"
+              ><span class="checkbox">Use Numbers(0-9)</span></label
+            >
+          </div>
+          <div class="control">
+            <input type="checkbox" id="punctuation" />
+            <label class="check-label" for="punctuation"
+              ><span class="checkbox"
+                >Use special characters(@,#,^,$)</span
+              ></label
+            >
+          </div>
+
+          <button class="generate" id="generate">Generate Password!</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+    <script src="./function.js"></script>
+
+    <!--New tag footer-->
+    <!--<footer class="footer">
+      <ul class="footer-social-links list-no-bullets">
+        <li class="list-item-inline">
+          <a class="link" href="mailto:nivedshaji2006@gmail.com">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+        </li>
+
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/Nivet2006">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </li>
+
+        <li class="list-item-inline">
+          <a class="link" href="https://twitter.com/nivet2006">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </li>
+
+        <li class="list-item-inline">
+          <a class="link" href="https://www.instagram.com/nivet.2006/">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </li>-->
+
+        <!--    <li class="list-item-inline">
+      <a class="link" href="https://www.linkedin.com/in/shraddha-s/">
+        <i class="fab fa-linkedin-in fa-2x"></i>
+      </a>
+    </li>-->
+
+        <!--<li class="list-item-inline">
+      <a class="link" href="https://twitter.com/SShraddha6">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+    </li>-->
+
+        <!--<li class="list-item-inline">
+      <a class="link" href="https://www.instagram.com/_shraddha1998_/">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+    </li>-->
+    <br>
+      </ul>
+      <div class="footer-header">
+        <span>
+          <Center>
+          made with
+          <i class="fas fa-heart"></i>
+          &
+          <i class="fas fa-code fa-1x"></i>
+          by
+          <strong> <a class="plink" href="https://nivet2006.vercel.app/">Nived</a> </strong>
+          </Center>
+        </span>
+      </div>
+      <!--<div class="footer-header">
+    <i class="fas fa-code fa-1x"></i>
+    <span>
+      by
+      <strong> Nived </strong>
+      made with
+    </span>
+    <i class="fas fa-coffee"></i>
+  </div>-->
+    </footer>
+
+    <!--Footer complete-->
+  </body>
+</html>
