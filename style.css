@@ -150,3 +150,7 @@ input[type="checkbox"]:checked + label.check-label:before {
   text-decoration: none;
   color: #000000;
 }
+
+.generate, .title{
+  font-size: 22px;
+}
